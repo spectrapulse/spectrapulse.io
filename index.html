@@ -59,6 +59,55 @@
   </head>
 
   <body>
+    <header>
+      <style>
+        header {
+          display: flex;
+          place-content: center;
+          align-items: center;
+          position: absolute;
+          top: 0px;
+          width: 100%;
+          background-color: #cf2c2c;
+          color: white;
+          font-weight: 500;
+          font-size: 16px;
+          word-wrap: break-word;
+        }
+        header div {
+          margin: 10px;
+          margin-top: 20px;
+        }
+        header a {
+          margin: 0;
+          color: #eee;
+          font-weight: 500;
+        }
+        header .ua-ico {
+          background-image: url("https://naamloos.dev/inc/ua.png");
+          height: 18px;
+          width: 18px;
+          display: inline-block;
+          background-size: contain;
+          vertical-align: middle;
+          margin: 0 2px;
+          background-repeat: no-repeat;
+        }
+      </style>
+
+      <div>
+        <i class="ua-ico"></i>
+        Greetings. As you might have noticed, the current situation in Ukraine
+        is not great. Please consider donating to them.
+        <i class="ua-ico"></i>
+        <br />
+        <a href="https://giro555.nl/">Giro 555 (NL)</a>
+        |
+        <a href="https://www.icrc.org/en/donate/ukraine"
+          >International Committee of the Red Cross</a
+        >
+      </div>
+    </header>
     <main>
       <span class="logo">
         <h1>spectrapulse</h1>
