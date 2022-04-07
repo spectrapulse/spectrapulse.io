@@ -71,14 +71,14 @@ p {
 }
 
 a {
-  color: var(--text-muted);
-  transition: ease-in-out 150ms;
   margin: 15px 10px;
+  transition: ease-in-out 150ms !important;
 }
-a:hover {
+i:hover {
   color: var(--text-normal);
 }
 
 i {
+  color: var(--text-muted);
   font-size: 2em;
 }
