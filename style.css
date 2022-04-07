@@ -1,7 +1,5 @@
 * {
   font-family: "Fira Sans", sans-serif;
-  /* Smoothly transition when color scheme changes */
-  transition: ease-in-out 250ms !important;
 }
 
 :root {
@@ -72,13 +70,14 @@ p {
 
 a {
   margin: 15px 10px;
-  transition: ease-in-out 150ms !important;
-}
-i:hover {
-  color: var(--text-normal);
 }
 
 i {
+  transition: ease-in-out 150ms;
   color: var(--text-muted);
   font-size: 2em;
+}
+
+i:hover {
+  color: var(--text-normal);
 }
