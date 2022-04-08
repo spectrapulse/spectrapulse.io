@@ -1,0 +1,175 @@
+:root {
+  --background-primary: #f2f3f5;
+
+  --logo-shadow: #0005;
+
+  --text-normal: #2e3338;
+  --text-muted: #5e6772;
+  --text-unfocused: #7b7b7b;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background-primary: #111416;
+
+  --logo-shadow: #fff3;
+
+  --text-normal: #dcddde;
+  --text-muted: #a3a6aa;
+  --text-unfocused: #6f6f6f;
+}
+
+* {
+  padding: unset;
+  margin: unset;
+  text-size-adjust: none;
+  size-adjust: none;
+  transition: ease-in-out 150ms;
+  user-select: none;
+}
+html,
+body,
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: var(--background-primary);
+  height: 100%;
+}
+main div {
+  margin: 15px 0;
+}
+
+#title {
+  font-family: "Fira Mono", monospace;
+  text-align: center;
+  font-weight: 600;
+  color: var(--background-primary);
+  text-shadow: 0px 9px 30px var(--logo-shadow);
+  margin-bottom: 20px;
+}
+
+#subtitle {
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: var(--text-normal);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav i {
+  margin: 0 10px;
+  color: var(--text-muted);
+  transition: ease-in-out 150ms;
+}
+
+nav i:hover {
+  color: var(--text-normal);
+}
+
+#copyright {
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  color: var(--text-unfocused);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #title {
+    font-size: 32pt;
+  }
+  #subtitle {
+    font-size: 9pt;
+  }
+  .navbutton {
+    font-size: 14pt;
+    margin: 0 5px;
+  }
+  #copyright {
+    font-size: 8pt;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #title {
+    font-size: 45pt;
+  }
+  #subtitle {
+    font-size: 12pt;
+  }
+  .navbutton {
+    font-size: 20pt;
+    margin: 0 7px;
+  }
+  #copyright {
+    font-size: 10pt;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #title {
+    font-size: 75pt;
+  }
+  #subtitle {
+    font-size: 18pt;
+  }
+  .navbutton {
+    font-size: 25pt;
+    margin: 0 10px;
+  }
+  #copyright {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #title {
+    font-size: 100pt;
+  }
+  #subtitle {
+    font-size: 20pt;
+  }
+  .navbutton {
+    font-size: 30pt;
+    margin: 0 12px;
+  }
+  #copyright {
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  body {
+    justify-content: space-around;
+  }
+  main {
+    margin-bottom: 150px;
+  }
+  #copyright {
+    margin-top: -100px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    justify-content: space-between;
+  }
+  main {
+    margin-bottom: 50px;
+  }
+  #copyright {
+    margin-bottom: 25px;
+  }
+}

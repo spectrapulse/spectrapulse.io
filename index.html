@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyrone Faulhaber</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://github.com/spectrapulse.png"
+    />
+
+    <script src="script.js"></script>
+    <meta property="og:title" content="Tyrone Faulhaber" />
+    <meta
+      property="og:description"
+      content="A Student Software Engineering from The Netherlands."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://spectrapulse.io" />
+    <meta property="og:site_name" content="spectrapulse.io" />
+    <meta property="og:image" content="https://github.com/spectrapulse.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+  </head>
+
+  <body>
+    <header>
+      <style>
+        /* Based and partially stolen from https://naamloos.dev */
+        #ua-banner {
+          position: absolute;
+          width: 100%;
+          background-color: #cf2c2c;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          place-content: center;
+          place-items: center;
+          font-family: "Fira Sans", sans-serif;
+          font-weight: 400;
+          color: white;
+          font-size: 14px;
+        }
+        .ua-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          line-height: 22px;
+        }
+        #ua-row1 {
+          margin: 3px 5px;
+        }
+        #ua-text {
+          text-align: center;
+        }
+        .ua-ico {
+          display: inline-block;
+          background-image: url("https://naamloos.dev/inc/ua.png");
+
+          height: 18px;
+          width: 18px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          vertical-align: middle;
+          margin: 0 10px;
+        }
+        .ua-button {
+          font-weight: 600;
+          font-family: "Fira Sans", sans-serif;
+          color: white;
+          background-color: transparent;
+          border-radius: 3px;
+          border-color: white;
+          padding: 0 10px;
+          line-height: 22px;
+          border: 2px solid;
+          box-sizing: border-box;
+          margin: 3px 2px;
+          cursor: pointer;
+        }
+        .ua-button:hover {
+          color: #cf2c2c;
+          border-color: white;
+          background-color: white;
+        }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .ua-row {
+            width: 100%;
+          }
+          #ua-row2 {
+            flex-direction: column;
+            place-content: center;
+            place-items: center;
+            place-self: center;
+            width: 90%;
+          }
+          .ua-button {
+            width: 100%;
+            padding: 3px 10px;
+            margin: 5px 0;
+          }
+        }
+      </style>
+      <div id="ua-banner">
+        <div class="ua-row" id="ua-row1">
+          <i class="ua-ico"></i>
+          <p class="ua-row" id="ua-text">
+            Greetings. As you might have noticed, the current situation in
+            Ukraine is not great. Please consider donating to them.
+          </p>
+          <i class="ua-ico"></i>
+        </div>
+        <div id="ua-row2">
+          <button
+            class="ua-button"
+            onclick="location.href='https://giro555.nl/'"
+          >
+            Giro 555 (NL)
+          </button>
+          <button
+            class="ua-button"
+            onclick="location.href='https://www.icrc.org/en/donate/ukraine'"
+          >
+            International Committee of the Red Cross
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="logo">
+        <h1 id="title">spectrapulse</h1>
+        <h2 id="subtitle">
+          Student Software Engineering from The Netherlands.
+        </h2>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/spectrapulse"
+                title="GitHub"
+                target="_blank"
+              >
+                <i class="fab fa-github navbutton"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://gitlab.com/spectrapulse"
+                title="GitLab"
+                target="_blank"
+              >
+                <i class="fab fa-gitlab navbutton"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://keybase.io/spectrapulse"
+                title="Keybase"
+                target="_blank"
+              >
+                <i class="fab fa-keybase navbutton"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/spectrapulse"
+                title="LinkedIn"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin navbutton"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://steamcommunity.com/id/spectrapulse"
+                title=" Steam"
+                target="_blank"
+              >
+                <i class="fab fa-steam navbutton"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/spectrapulse"
+                title="Twitter"
+                target="_blank"
+              >
+                <i class="fab fa-twitter navbutton"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div></div>
+    </main>
+    <footer>
+      <div>
+        <p id="copyright">Copyright &COPY; 2022-present Tyrone Faulhaber</p>
+      </div>
+    </footer>
+  </body>
+</html>
