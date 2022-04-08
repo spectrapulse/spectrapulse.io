@@ -1,7 +1,7 @@
 :root {
   --background-primary: #f2f3f5;
 
-  --logo-shadow: #0005;
+  --logo-shadow: #0006;
 
   --text-normal: #2e3338;
   --text-muted: #5e6772;
@@ -12,7 +12,7 @@
 [data-theme="dark"] {
   --background-primary: #111416;
 
-  --logo-shadow: #fff3;
+  --logo-shadow: #fff5;
 
   --text-normal: #dcddde;
   --text-muted: #a3a6aa;
