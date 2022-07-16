@@ -19,6 +19,11 @@
   --text-unfocused: #6f6f6f;
 }
 
+/* Hide some secrets */
+body>text {
+    display: none;
+}
+
 * {
   padding: unset;
   margin: unset;
