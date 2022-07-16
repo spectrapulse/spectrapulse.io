@@ -15,7 +15,7 @@ else
     mkdir -p $HOME/.cfg-bak
     cfg checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | xargs -I{} mv {} .cfg-bak/{}
 fi
-cfg checkout
+cfg checkout -f
 cfg config status.setUntrackedFiles no
 
 exit
