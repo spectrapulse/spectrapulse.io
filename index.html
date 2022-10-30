@@ -1,25 +1,3 @@
-#! /usr/bin/env bash
-
-/usr/bin/git clone --bare https://github.com/spectrapulse/dotfiles.git $HOME/.cfg/
-
-function cfg {
-    /usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME $@
-}
-
-cfg checkout
-
-if [ $? = 0 ]; then
-    echo "Checked out config."
-else
-    echo "Backing up exiting dot files to '~/.cfg-bak'." 
-    mkdir -p $HOME/.cfg-bak
-    cfg checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | xargs -I{} mv {} .cfg-bak/{}
-fi
-cfg checkout -f
-cfg config status.setUntrackedFiles no
-
-exit
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
