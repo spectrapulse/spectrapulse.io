@@ -199,3 +199,7 @@ nav i:hover {
     margin-bottom: 25px;
   }
 }
+
+p, h1 {
+ background-image: url("/accessibility_troll.png");
+}
