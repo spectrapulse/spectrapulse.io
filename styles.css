@@ -60,7 +60,6 @@ main div {
 #title {
   font-family: 'Fira Mono', monospace;
   text-align: center;
-  font-weight: 600;
   color: var(--background-primary);
   text-shadow: 0px 9px 30px var(--logo-shadow);
   margin-bottom: 20px;
