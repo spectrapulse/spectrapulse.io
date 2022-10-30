@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: Tyrone Faulhaber
+Site: https://spectrapul.se
+Twitter: @spectrapulse
+Location: Randstad, The Netherlands
+
+/* SITE */
+Last update: 2022/10/30
+Language: English
+Standards: HTML5, CSS3, ES3
+Components: CloudFlare, Font Awesome, Google Fonts
+Software: Visual Studio Code
