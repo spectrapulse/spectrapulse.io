@@ -29,7 +29,6 @@ body>text {
   margin: unset;
   text-size-adjust: none;
   size-adjust: none;
-  transition: ease-in-out 150ms;
   user-select: none;
 }
 
@@ -82,7 +81,6 @@ nav ul {
 nav i {
   margin: 0 10px;
   color: var(--text-muted);
-  transition: ease-in-out 150ms;
 }
 
 nav i:hover {
