@@ -9,7 +9,7 @@
 }
 
 /* Dark Theme */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --background-primary: #141414;
 
   --logo-shadow: #fff4;
@@ -59,7 +59,7 @@ main div {
 }
 
 #title {
-  font-family: "Fira Mono", monospace;
+  font-family: 'Fira Mono', monospace;
   text-align: center;
   font-weight: 600;
   color: var(--background-primary);
@@ -68,7 +68,7 @@ main div {
 }
 
 #subtitle {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   text-align: center;
   font-weight: 400;
   color: var(--text-normal);
@@ -90,7 +90,7 @@ nav i:hover {
 }
 
 #copyright {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   text-align: center;
   font-weight: 300;
   color: var(--text-unfocused);
@@ -200,6 +200,7 @@ nav i:hover {
   }
 }
 
-p, h1 {
- background-image: url("/accessibility_troll.png");
+p,
+h1 {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACWAQMAAABelSeRAAAACXBIWXMAAAAAAAAAAQCEeRdzAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABxJREFUGBntwQENAAAAwiD7p34ON2AAAAAAAHAlFtoAAdSpSpMAAAAASUVORK5CYII=');
 }
