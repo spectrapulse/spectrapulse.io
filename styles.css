@@ -77,12 +77,13 @@ nav ul {
   list-style: none;
 }
 
-nav i {
+svg {
+  transition: 150ms ease-in-out color;
   margin: 0 10px;
   color: var(--text-muted);
 }
 
-nav i:hover {
+svg:hover {
   color: var(--text-normal);
 }
 
