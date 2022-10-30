@@ -34,7 +34,6 @@ body>text {
 }
 html,
 body,
-header,
 main,
 footer {
   display: flex;
