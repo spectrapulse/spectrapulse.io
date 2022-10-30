@@ -21,7 +21,7 @@
 
 /* Hide some secrets */
 body>text {
-    display: none;
+  display: none;
 }
 
 * {
@@ -32,6 +32,7 @@ body>text {
   transition: ease-in-out 150ms;
   user-select: none;
 }
+
 html,
 body,
 main,
@@ -41,13 +42,18 @@ footer {
   place-content: center;
   place-items: center;
 }
+
 html {
-  height: 100%;
-}
-body {
   background-color: var(--background-primary);
   height: 100%;
 }
+
+body {
+  background-color: var(--background-primary);
+  height: calc(100% - 7px);
+  width: calc(100% - 7px);
+}
+
 main div {
   margin: 15px 0;
 }
@@ -94,13 +100,16 @@ nav i:hover {
   #title {
     font-size: 32pt;
   }
+
   #subtitle {
     font-size: 9pt;
   }
+
   .navbutton {
     font-size: 20pt;
     margin: 0 7px;
   }
+
   #copyright {
     font-size: 8pt;
   }
@@ -110,13 +119,16 @@ nav i:hover {
   #title {
     font-size: 45pt;
   }
+
   #subtitle {
     font-size: 12pt;
   }
+
   .navbutton {
     font-size: 20pt;
     margin: 0 7px;
   }
+
   #copyright {
     font-size: 10pt;
   }
@@ -126,13 +138,16 @@ nav i:hover {
   #title {
     font-size: 75pt;
   }
+
   #subtitle {
     font-size: 18pt;
   }
+
   .navbutton {
     font-size: 25pt;
     margin: 0 10px;
   }
+
   #copyright {
     font-size: 12pt;
   }
@@ -142,13 +157,16 @@ nav i:hover {
   #title {
     font-size: 100pt;
   }
+
   #subtitle {
     font-size: 20pt;
   }
+
   .navbutton {
     font-size: 30pt;
     margin: 0 12px;
   }
+
   #copyright {
     font-size: 14pt;
   }
@@ -158,9 +176,11 @@ nav i:hover {
   body {
     justify-content: space-around;
   }
+
   main {
     margin-bottom: 150px;
   }
+
   #copyright {
     margin-top: -100px;
   }
@@ -170,9 +190,11 @@ nav i:hover {
   body {
     justify-content: space-between;
   }
+
   main {
     margin-bottom: 50px;
   }
+
   #copyright {
     margin-bottom: 25px;
   }
