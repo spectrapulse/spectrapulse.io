@@ -1,11 +1,16 @@
 /* TEAM */
 Developer: Tyrone Faulhaber
-Site: https://spectrapul.se
-Twitter: @spectrapulse
+Site: https://spectrapulse.io
+Twitter/X: @spectrapulse
+Discord: @spectrapulse
+Telegram: https://t.me/spectrapulse
+GitHub: https://github.com/spectrapulse
+GitLab: https://gitlab.com/spectrapulse
+Ko-Fi: https://ko-fi.com/spectrapulse
 Location: Randstad, The Netherlands
 
 /* SITE */
-Last update: 2022/10/30
+Last update: 2024-05-01
 Language: English
 Standards: HTML5, CSS3, ES2022
 Components: CloudFlare, Font Awesome, Google Fonts
