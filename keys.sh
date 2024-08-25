@@ -23,7 +23,9 @@ fi
 
 # Add keys to authorized_keys file if they're not already present
 curl -s $KEYS_URL | while IFS= read -r KEY; do
+  echo "Read key while: ${KEY}"
   if ! grep -qF "${KEY}" "${AUTHORIZED_KEYS_FILE}"; then
+    echo "Found key grep: ${KEY"
     echo "$KEY" | tee -a "${AUTHORIZED_KEYS_FILE}" > /dev/null
     echo "Added new key: ${KEY}"
   else
