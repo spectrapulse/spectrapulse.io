@@ -15,7 +15,7 @@ fi
 
 # Add keys to authorized_keys file if they're not already present
 while IFS= read -r KEY; do
-  if ! grep -qF "${KEY}""${AUTHORIZED_KEYS_FILE}"; then
+  if ! grep -qF "${KEY}" "${AUTHORIZED_KEYS_FILE}"; then
     echo "$KEY" >> "${AUTHORIZED_KEYS_FILE}"
     echo "Added new key: ${KEY}"
   else
