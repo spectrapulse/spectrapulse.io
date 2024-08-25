@@ -20,17 +20,17 @@ fi
 
 # Fetch and print keys
 KEYS=$(curl -s $KEYS_URL)
-echo -e "Fetched keys from ${KEYS_URL}:\n${KEYS}"
+echo -e "Fetched keys from ${KEYS_URL}:\n${KEYS}\n"
 
 # Add keys to authorized_keys file if they're not already present
-for KEY in ${KEYS}; do
+while IFS= read -r KEY; do
   if ! grep -qF "${KEY}" "${AUTHORIZED_KEYS_FILE}"; then
     echo "$KEY" | tee -a "${AUTHORIZED_KEYS_FILE}" > /dev/null
     echo "Added new key: ${KEY}"
   else
     echo "Key already exists: ${KEY}"
   fi
-done
+done <<< "${KEYS}"
 
 echo "SSH keys from ${GITHUB_USER} have been processed and added to ${AUTHORIZED_KEYS_FILE} if they were not already present."
   
