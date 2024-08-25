@@ -7,6 +7,9 @@ KEYS_URL="http://github.com/${GITHUB_USER}.keys"
 SSH_DIR="${HOME}/.ssh"
 AUTHORIZED_KEYS_FILE="${SSH_DIR}/authorized_keys"
 
+# Shell debug
+set -x
+
 # Create '.ssh' dir if it doesn't exist.
 if [ ! -d "${SSH_DIR}" ]; then
   mkdir -p "${SSH_DIR}"
@@ -27,6 +30,9 @@ curl -s $KEYS_URL | while IFS= read -r KEY; do
     echo "Key already exists: ${KEY}"
   fi
 done
+
+# Disable shell debug
+set +x
 
 echo "SSH keys from ${GITHUB_USER} have been processed and added to ${AUTHORIZED_KEYS_FILE} if they were not already present."
   
