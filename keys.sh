@@ -2,7 +2,7 @@
 
 GITHUB_USER="spectrapulse"
 
-KEYS_URL="http://github.com/${GITHUB_USER}.keys"
+KEYS_URL="https://github.com/${GITHUB_USER}.keys"
 
 SSH_DIR="${HOME}/.ssh"
 AUTHORIZED_KEYS_FILE="${SSH_DIR}/authorized_keys"
