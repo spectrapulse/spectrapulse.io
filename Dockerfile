@@ -1,3 +1,3 @@
-FROM nginx:mainline-alpine-slim
+FROM nginxinc/nginx-unprivileged:mainline-alpine-slim
 COPY . /usr/share/nginx/html/
-EXPOSE 80/tcp
+EXPOSE 8080/tcp
